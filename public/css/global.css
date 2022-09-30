@@ -1,0 +1,12 @@
+html,
+body{
+  height: 100%;
+  background: #f0f0f0;
+}
+.h100{
+  height: 100%;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
