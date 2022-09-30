@@ -27,7 +27,9 @@ export default {
   components: {},
   computed: {},
   data() {
-    return {};
+    return {
+      data: "",
+    };
   },
   methods: {},
   created() {
