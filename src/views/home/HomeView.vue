@@ -4,12 +4,7 @@
       <Sider ref="side1" hide-trigger collapsible :collapsed-width="78">
         <Menu active-name="1-2" theme="dark" width="auto">
           <template v-for="(item, index) in menuData">
-            <MenuItem
-              class="my-menu"
-              :name="item.name"
-              :key="index"
-              :to="item.to"
-            >
+            <MenuItem :name="item.name" :key="index" :to="item.to">
               <span>{{ item.name }}</span>
             </MenuItem>
           </template>
@@ -31,7 +26,10 @@ export default {
   computed: {},
   data() {
     return {
-      menuData: [{ name: "路由管理", to: "/requestApi" }],
+      menuData: [
+        { name: "路由管理", to: "/requestApi" },
+        { name: "配置", to: "/dispose" },
+      ],
     };
   },
   methods: {},
