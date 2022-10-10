@@ -12,11 +12,9 @@ import fs from 'fs'
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } }
 ])
-console.log("process.env.ELECTRON_NODE_INTEGRATION",process.env.ELECTRON_NODE_INTEGRATION)
 
 async function createWindow() {
   // Create the browser window.
-  console.log("fs",fs)
   const win = new BrowserWindow({
     width: 800,
     height: 600,
